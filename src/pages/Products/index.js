@@ -12,8 +12,6 @@ const Products = () => {
   const [image, setImage] = useState(null);
   const [editing, setEditing] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(null);
-  const BASE_URL = "https://backend-pitii-v2.vercel.app";
-  //const BASE_URL = "http://localhost:5000";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -84,7 +82,7 @@ const Products = () => {
       <ul className="product-list">
         {products.map((product) => (
           <li key={product.id} className="product-item">
-            <img src={`${BASE_URL}${product.image_url}`} alt={product.name} />
+            <img src={`${product.image_url}`} alt={product.name} />
             <div className="product-info">
               <strong>{product.name}</strong>
               <span>R${product.price}</span>
