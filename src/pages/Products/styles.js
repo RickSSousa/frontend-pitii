@@ -24,6 +24,7 @@ export const Container = styled.div`
       background-color: #f8f8f8;
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
 
       img {
         border-radius: 10%;
