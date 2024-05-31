@@ -20,9 +20,9 @@ const Register = () => {
           email,
           password,
         })
-        .then((id) => {
+        .then((response) => {
           alert("User registered successfully");
-          setUsers((users) => [...users, { id, name, email, password }]);
+          setUsers((users) => [...users, response.data]);
         });
     } catch (error) {
       console.error("Error registering user:", error);
