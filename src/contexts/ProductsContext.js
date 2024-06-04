@@ -5,8 +5,8 @@ export const ProductsContext = createContext();
 
 export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
-  //const BASE_URL = "https://backend-pitii-v2.vercel.app";
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://backend-pitii-v2.vercel.app";
+  //const BASE_URL = "http://localhost:5000";
 
   useEffect(() => {
     const fetchProducts = async () => {
