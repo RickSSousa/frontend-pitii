@@ -22,13 +22,13 @@ function Navbar() {
       </LogoContainer>
       <Ul>
         <Li>
+          <Link to="/home">Home</Link>
+        </Li>
+        <Li>
           <Link to="/products">Produtos</Link>
         </Li>
         {isAuthenticated ? (
           <Ul>
-            <Li>
-              <Link to="/home">Home</Link>
-            </Li>
             <Li>
               <Link to="/users">Usuários</Link>
             </Li>

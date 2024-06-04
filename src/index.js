@@ -6,6 +6,9 @@ import { ProductsProvider } from "./contexts/ProductsContext";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./GlobalStyle";
 import theme from "./theme";
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
 
 ReactDOM.render(
   <React.StrictMode>
